@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="anime.min.js"></script>
+    <link rel="stylesheet" href="css\style.css">
+    <title></title>
+</head>
+<body>
+  <script>
+    function redirectToContactPage() {
+        
+        const contactPageFileName = "index4.html";
+        
+       
+        window.location.href = contactPageFileName;
+    }
+</script>
+
+   <header> 
+    <div class="logo" onclick="redirectToPage('index.html')">
+        <img src="imgs\logo.png" alt="Логотип">
+    </div>
+    <div class="nav-bar">
+        <a href="index2.html" class="nav-btn">О нас</a>
+        <a href="index3.html" class="nav-btn">Отзывы</a>
+        <div id="animatedButton" onmouseover="animateButton()"><a href="index4.html" class="nav-btn active-btn">Связаться</a></div>
+        
+    </div>
+    </header>
+    <div class="dostavka">
+        <img src="imgs\dostavka.png" alt="Баннер">
+    </div>
+
+    <div class="part3">
+        <div class="glavnaya">Главная / Плодовые деревья</div>
+      
+        <div class="sazhenci">Саженцы плодовых деревьев</div>
+        
+        <div class="filter">Есть в наличии</div>
+
+        <div class="filter-container">
+            <div class="filter-checkbox">
+              <input type="checkbox" id="abrikos" class="filter-checkbox" checked disabled>
+              <label for="abrikos">Абрикос</label>
+            </div>
+          
+            <div class="filter-checkbox">
+              <input type="checkbox" id="alycha" class="filter-checkbox" checked disabled>
+              <label for="alycha">Алыча</label>
+            </div>
+          
+            <div class="filter-checkbox">
+              <input type="checkbox" id="vishnya" class="filter-checkbox"checked disabled>
+              <label for="vishnya">Вишня</label>
+            </div>
+          
+            <div class="filter-checkbox">
+              <input type="checkbox" id="grusha" class="filter-checkbox"checked disabled>
+              <label for="grusha">Груша</label>
+            </div>
+          
+            <div class="filter-checkbox">
+              <input type="checkbox" id="inzhir" class="filter-checkbox"checked disabled>
+              <label for="inzhir">Инжир</label>
+            </div>
+          
+            <div class="filter-checkbox">
+              <input type="checkbox" id="mindal" class="filter-checkbox"checked disabled>
+              <label for="mindal">Миндаль</label>
+            </div>
+          
+            <div class="filter-checkbox">
+              <input type="checkbox" id="persik" class="filter-checkbox"checked disabled>
+              <label for="persik">Персик</label>
+            </div>
+          
+            <div class="filter-checkbox">
+              <input type="checkbox" id="hurma" class="filter-checkbox"checked disabled>
+              <label for="hurma">Хурма</label>
+            </div>
+          
+            <div class="filter-checkbox">
+              <input type="checkbox" id="chereshnya" class="filter-checkbox"checked disabled>
+              <label for="chereshnya">Черешня</label>
+            </div>
+          
+            <div class="filter-checkbox">
+              <input type="checkbox" id="yablonia" class="filter-checkbox"checked disabled>
+              <label for="yablonia">Яблоня</label>
+            </div>
+          </div>
+          
+          <div class="fruit" id="abrikos">Абрикос</div>
+          <div class="fruit" id="alycha">Алыча</div>
+          <div class="fruit" id="vishnya">Вишня</div>
+          <div class="fruit" id="grusha">Груша</div>
+          <div class="fruit" id="inzhir">Инжир</div>
+          <div class="fruit" id="mindal">Миндаль</div>
+          <div class="fruit" id="persik">Персик</div>
+          <div class="fruit" id="hurma">Хурма</div>
+          <div class="fruit" id="chereshnya">Черешня</div>
+          <div class="fruit" id="yablonia">Яблоня</div>
+
+
+        <div class="vesnakartinka">
+            <img src="imgs\vesna.png" alt="Предзаказ">
+            
+        </div>
+
+        
+
+        <div class="product-container">
+            
+            <div class="product">
+              <img src="imgs\авангард.png" alt="Product 1">
+              <div class="product-title">Яблоня Авангард</div>
+              <div class="product-price">
+                <span class="discounted-price">99 руб.</span>
+                <span class="original-price">362руб.</span>
+              </div>
+              <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+            </div>
+            <div class="product">
+                <img src="imgs\груша.png" alt="Product 2">
+                <div class="product-title">Груша Богема</div>
+                <div class="product-price">
+                  <span class="discounted-price">109 руб.</span>
+                  <span class="original-price">329руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\персик золотая москва.png" alt="Product 3">
+                <div class="product-title">Персик Золотая Москва</div>
+                <div class="product-price">
+                  <span class="discounted-price">199 руб.</span>
+                  <span class="original-price">549руб.</span>
+                </div>
+                <button class="contact-button onclick="redirectToContactPage()"">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\хурма.png" alt="Product 2">
+                <div class="product-title">Хурма Мидер</div>
+                <div class="product-price">
+                  <span class="discounted-price">323 руб.</span>
+                  <span class="original-price">588руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\наполеон.png" alt="Product 2">
+                <div class="product-title">Черешня Наполеон</div>
+                <div class="product-price">
+                  <span class="discounted-price">149 руб.</span>
+                  <span class="original-price">399руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\вишня октава.png" alt="Product 2">
+                <div class="product-title">Вишня Октава</div>
+                <div class="product-price">
+                  <span class="discounted-price">149 руб.</span>
+                  <span class="original-price">439руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\миндаль.png" alt="Product 2">
+                <div class="product-title">Миндаль Амаретто</div>
+                <div class="product-price">
+                  <span class="discounted-price">219 руб.</span>
+                  <span class="original-price">399руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\абрикос.png" alt="Product 2">
+                <div class="product-title">Абрикос Краснощекий</div>
+                <div class="product-price">
+                  <span class="discounted-price">199 руб.</span>
+                  <span class="original-price">494руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\алыча.png" alt="Product 2">
+                <div class="product-title">Алыча Десертная</div>
+                <div class="product-price">
+                  <span class="discounted-price">139 руб.</span>
+                  <span class="original-price">373руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\вишня десертная.png" alt="Product 2">
+                <div class="product-title">Вишня Крупная Десертная</div>
+                <div class="product-price">
+                  <span class="discounted-price">149 руб.</span>
+                  <span class="original-price">439руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\инжир.png" alt="Product 2">
+                <div class="product-title">Инжир Браун Турция</div>
+                <div class="product-price">
+                  <span class="discounted-price">248 руб.</span>
+                  <span class="original-price">450руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+              <div class="product">
+                <img src="imgs\слива гигант.png " alt="Product 2">
+                <div class="product-title">Слива Гигант</div>
+                <div class="product-price">
+                  <span class="discounted-price">139 руб.</span>
+                  <span class="original-price">339руб.</span>
+                </div>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
+              </div>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div class="my-image"><img src="imgs\logo.png" alt="logo"></div>
+        <div class="container">
+            <div class="column">
+              <div class="row1" style="font-size: 20px;">Контакты</div>
+              <div class="row2 " style="color: #FFF; text-align: left; white-space: nowrap; font-size: 16px; font-style: normal; font-weight: 300; line-height: 133%; letter-spacing: -0.16px;">+7 (800) 101-89-75</div>
+              <div class="row3" style="color: #FFF; text-align: left; white-space: nowrap; font-size: 16px; font-style: normal; font-weight: 300; line-height: 133%; letter-spacing: -0.16px;">greenland@gmail.com</div>
+            </div>
+            <div class="column2">
+              <div class="row4" style="font-size: 20px;">О нас</div>
+              <div class="row5" style="color: #FFF; text-align: left; white-space: nowrap; font-size: 16px; font-style: normal; font-weight: 300; line-height: 133%; letter-spacing: -0.16px;">VK : https://vk.com/greenland</div>
+              <div class="row6" style="color: #FFF; text-align: left; white-space: nowrap; font-size: 16px; font-style: normal; font-weight: 300; line-height: 133%; letter-spacing: -0.16px;">YT : www.youtube.com/@greenland</div>
+            </div>
+            <div class="column3">
+              <div class="row7" style="color: #FFF; text-align: right; white-space: nowrap; font-size: 16px; font-style: normal; font-weight: 300; line-height: 133%; letter-spacing: -0.16px;">ООО "садовые питомники ГРИН ЛЭНД"</div>
+              <div class="row8" style="color: #FFF; text-align: right; white-space: nowrap; font-size: 16px; font-style: normal; font-weight: 300; line-height: 133%; letter-spacing: -0.16px;">ИНН: 2360015984</div>
+              <div class="row9" style="color: #FFF; text-align: right; white-space: nowrap; font-size: 16px; font-style: normal; font-weight: 300; line-height: 133%; letter-spacing: -0.16px;">КПП: 236001002</div>
+            </div>
+          </div>
+        <div class="last">2023 © Интернет-магазин Green Land осуществляет доставку растений и саженцев по Москве и России</div>
+        
+    </div> 
+                 
+       
+
+        
+</body>
+</html>
